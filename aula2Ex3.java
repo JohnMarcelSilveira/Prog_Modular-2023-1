@@ -1,4 +1,4 @@
-public class aula2Ex4 {
+public class aula2Ex3 {
 
     public static void main(String[] args) {
         int vet[] = { 1, 2, 3, 1, 4, 5, 5, 6, 7, 2 };
