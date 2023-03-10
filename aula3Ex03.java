@@ -1,3 +1,10 @@
+/*Exercício 3
+• Elabore um programa que preencha por leitura do teclado uma
+matriz M de tamanho 3 × 3 de números inteiros.
+• Em seguida, crie um vetor V de três posições, em que cada posição
+deverá armazenar a soma dos números de cada coluna da matriz.
+ Exiba na tela a matriz M e o vetor V. */
+
 import java.util.Scanner;
 
 public class aula3Ex03 {
@@ -38,13 +45,13 @@ public class aula3Ex03 {
 
         int vetor[] = new int[3];
 
-        for (int i = 0; i < matriz.length; i++) {           
+        for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                if(j==0){
+                if (j == 0) {
                     vetor[0] = vetor[0] + matriz[i][0];
-                }else if(j==1){
+                } else if (j == 1) {
                     vetor[1] += matriz[i][1];
-                }else{
+                } else {
                     vetor[2] += matriz[i][2];
                 }
             }

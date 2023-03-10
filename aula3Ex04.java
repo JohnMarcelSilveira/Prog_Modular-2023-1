@@ -1,3 +1,12 @@
+/*
+    Exercício 4
+• Faça um programa que leia do teclado dois números inteiros L e C e
+preencha uma matriz A de L linhas e C colunas.
+• Crie uma matriz T que armazenará a transposta de A.
+• Imprima na tela a matriz A e a matriz T 
+
+ */
+
 import java.util.Scanner;
 
 public class aula3Ex04 {
@@ -21,12 +30,12 @@ public class aula3Ex04 {
             }
             System.out.println();
         }
-    }    
+    }
 
     public static void main(String[] args) {
 
-        int matriz[][], transposta[][], l,c;
-        
+        int matriz[][], transposta[][], l, c;
+
         System.out.println("digite o numero de linhas e de colunas");
         l = in.nextInt();
         c = in.nextInt();
@@ -34,10 +43,9 @@ public class aula3Ex04 {
         matriz = new int[l][c];
         transposta = new int[c][l];
 
-
         lerMatriz(matriz);
 
-        for (int i = 0; i < matriz.length; i++) {           
+        for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 transposta[j][i] = matriz[i][j];
             }

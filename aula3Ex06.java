@@ -1,4 +1,13 @@
-import java.util.Random;
+
+/*
+ * Exercício 6
+• Faça um programa que leia as dimensões de duas matrizes A e B, e
+depois leia as duas matrizes.
+• Se as matrizes forem de tamanhos compatíveis para multiplicação,
+crie a matriz R resultante da multiplicação de A por B.
+• Imprima na tela as matrizes A, B e R.
+ * 
+ */
 import java.util.Scanner;
 
 public class aula3Ex06 {
@@ -42,16 +51,16 @@ public class aula3Ex06 {
 
             A = new int[l][c];
             B = new int[lin][col];
-            R = new int[l][col];            
+            R = new int[l][col];
 
             lerMatriz(A);
             lerMatriz(B);
 
             for (int i = 0; i < A.length; i++) {
                 for (int j = 0; j < B[0].length; j++) {
-                    for(int k=0; k<A[i].length; k++){
+                    for (int k = 0; k < A[i].length; k++) {
                         R[i][j] += A[i][k] * B[k][j];
-                    }                 
+                    }
                 }
             }
 

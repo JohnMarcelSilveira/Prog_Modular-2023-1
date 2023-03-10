@@ -1,6 +1,14 @@
+/*
+ * Exercício 7
+• Faça um programa que leia duas matrizes quadradas A e B, de ordem
+N, fornecido pelo usuário, e verifique se ambas são inversas (ou seja,
+a multiplicação de A por B é a matriz identidade).
+
+ */
+
 import java.util.Scanner;
 
-public class aula3Ex07{
+public class aula3Ex07 {
 
     static Scanner in = new Scanner(System.in);
 
@@ -41,24 +49,23 @@ public class aula3Ex07{
 
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < B[0].length; j++) {
-                for(int k=0; k<A[i].length; k++){
+                for (int k = 0; k < A[i].length; k++) {
                     I[i][j] += A[i][k] * B[k][j];
-                }                 
+                }
             }
         }
-
 
         boolean ehIdentidade = false;
 
         for (int i = 0; i < I.length; i++) {
             for (int j = 0; j < I[0].length; j++) {
-                if(i==j && I[i][j]==1){
+                if (i == j && I[i][j] == 1) {
                     ehIdentidade = true;
                 }
             }
         }
 
-        if(ehIdentidade)
+        if (ehIdentidade)
             System.out.println("São inversas");
 
         System.out.println("matriz identidade");
@@ -69,6 +76,6 @@ public class aula3Ex07{
 
         System.out.println("matriz B");
         imprimeMatriz(B);
-        
+
     }
 }

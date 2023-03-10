@@ -1,7 +1,15 @@
+/*
+ * Exercício 4
+• Modifique o exercício anterior para que a saída não mostre valores
+repetidos.
+• Exemplo:
+• Se o vetor for igual a [1, 1, 1, 1, 1, 2, 1, 1, 1, 2], deve-se imprimir “1, 2”
+ */
+
 public class aula2Ex4 {
 
     public static void main(String[] args) {
-        int vet[] = { 1, 1, 1, 1, 1, 2, 1, 2, 1, 3,3 }, atual = 0;
+        int vet[] = { 1, 1, 1, 1, 1, 2, 1, 2, 1, 3, 3 }, atual = 0;
         int vet2[] = new int[vet.length];
 
         boolean achei = false;
