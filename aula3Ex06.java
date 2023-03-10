@@ -1,0 +1,70 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class aula3Ex06 {
+
+    static Scanner in = new Scanner(System.in);
+
+    public static void lerMatriz(int mat[][]) {
+        System.out.println("digite a matriz");
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                // Random gerador = new Random();
+                // mat[i][j] = gerador.nextInt(30);
+                mat[i][j] = in.nextInt();
+            }
+            System.out.println();
+        }
+    }
+
+    public static void imprimeMatriz(int mat[][]) {
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                System.out.print(mat[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int A[][], B[][], R[][], l, c, lin, col;
+
+        System.out.println("digite o numero de linhas e de colunas da primeira matriz");
+        l = in.nextInt();
+        c = in.nextInt();
+
+        System.out.println("digite o numero de linhas e de colunas da segunda matriz");
+        lin = in.nextInt();
+        col = in.nextInt();
+
+        if (l == col) {
+
+            A = new int[l][c];
+            B = new int[lin][col];
+            R = new int[l][col];            
+
+            lerMatriz(A);
+            lerMatriz(B);
+
+            for (int i = 0; i < A.length; i++) {
+                for (int j = 0; j < A[i].length; j++) {
+                    for(int k = 0; k < R[i].length; k++){
+                        R[i][k] += A[i][k] * B[k][j];
+                    }                   
+                }
+            }
+
+            System.out.println("Matriz A");
+            imprimeMatriz(A);
+            System.out.println("Matriz B");
+            imprimeMatriz(B);
+            System.out.println("Matriz R");
+            imprimeMatriz(R);
+
+        } else {
+            System.out.println("impossivel multiplicar essas matrizes!");
+        }
+
+    }
+}
