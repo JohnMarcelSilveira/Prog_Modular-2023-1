@@ -48,10 +48,10 @@ public class aula3Ex06 {
             lerMatriz(B);
 
             for (int i = 0; i < A.length; i++) {
-                for (int j = 0; j < A[i].length; j++) {
-                    for(int k = 0; k < R[i].length; k++){
-                        R[i][k] += A[i][k] * B[k][j];
-                    }                   
+                for (int j = 0; j < B[0].length; j++) {
+                    for(int k=0; k<A[i].length; k++){
+                        R[i][j] += A[i][k] * B[k][j];
+                    }                 
                 }
             }
 
