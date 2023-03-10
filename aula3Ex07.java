@@ -65,11 +65,11 @@ public class aula3Ex07 {
             }
         }
 
-        if (ehIdentidade)
+        if (ehIdentidade) {
             System.out.println("São inversas");
-
-        System.out.println("matriz identidade");
-        imprimeMatriz(I);
+            System.out.println("matriz identidade");
+            imprimeMatriz(I);
+        }
 
         System.out.println("matriz A");
         imprimeMatriz(A);
