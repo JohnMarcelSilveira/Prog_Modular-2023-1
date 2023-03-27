@@ -1,20 +1,21 @@
 package aula5;
+
+import java.util.Scanner;
+
 public class aula5Ex1 {
     public static void main(String[] args) {
-        boolean teste = "do".matches("(es)?");
-        System.out.println(teste);
+        Scanner in = new Scanner(System.in);
 
-        String numeros = "1 2 3 4 5 6 7 8";
-        for (int i = 0; i < 3; i++) {
-            numeros = numeros.replaceFirst("\\d", "digito");
-        }
-        System.out.println(numeros);
+        String frase;
 
-        String numeros2 = "1 2 3 \t 4 5 6 7 8";
-        String[] palavras = numeros2.split("\\s+");
-        for (String palavra : palavras) {
-            System.out.println(palavra);
-        }
+        System.out.println("Digite uma frase");
+        frase = in.nextLine();
+
+        String[] tokens = frase.split("\\s");
+       
+        for (int i = (tokens.length - 1); i >= 0; i--) {
+            System.out.print(tokens[i] + " ");
+        }       
 
     }
 }
