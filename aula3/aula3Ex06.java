@@ -1,3 +1,4 @@
+package aula3;
 
 /*
  * Exercício 6

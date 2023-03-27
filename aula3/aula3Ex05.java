@@ -1,3 +1,4 @@
+package aula3;
 /*
  * Exercício 5
 • Escreva um programa que preencha por leitura do teclado uma matriz

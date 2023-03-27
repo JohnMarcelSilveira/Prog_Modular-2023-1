@@ -1,3 +1,4 @@
+package aula3;
 /*
  * Exercício 7
 • Faça um programa que leia duas matrizes quadradas A e B, de ordem

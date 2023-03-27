@@ -1,3 +1,4 @@
+package aula3;
 /*Exercício 2
 • Faça um programa que calcule e imprima na tela uma matriz B de
 tamanho 10 × 10, em que seus elementos são calculados da seguinte

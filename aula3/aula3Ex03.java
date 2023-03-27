@@ -1,3 +1,4 @@
+package aula3;
 /*Exercício 3
 • Elabore um programa que preencha por leitura do teclado uma
 matriz M de tamanho 3 × 3 de números inteiros.

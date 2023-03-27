@@ -1,3 +1,4 @@
+package aula3;
 /*
     Exercício 4
 • Faça um programa que leia do teclado dois números inteiros L e C e

@@ -1,3 +1,4 @@
+package aula3;
 /*Exercício 1
 • Faça um programa que preencha por leitura do teclado uma matriz A
 de tamanho 4 × 4.
